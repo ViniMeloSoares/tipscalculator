@@ -31,7 +31,7 @@
         app:layout_constraintTop_toBottomOf="@+id/Tv_Title" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/til_total_account"
+        android:id="@+id/til_tie_total"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
@@ -40,11 +40,11 @@
         app:layout_constraintTop_toBottomOf="@+id/TV_subtitle">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/edt_total_account"
+            android:id="@+id/edt_tie_total"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:hint="Digite o valor total da conta:"
-            android:inputType="numberDecimal"/>
+            android:inputType="number"/>
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -56,7 +56,7 @@
         android:layout_margin="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/til_total_account">
+        app:layout_constraintTop_toBottomOf="@+id/til_tie_total">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/edt_number_of_people"
@@ -124,7 +124,8 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/edt_percentual"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:inputType="number"/>
 
             </com.google.android.material.textfield.TextInputLayout>
           </LinearLayout>
